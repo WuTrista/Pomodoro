@@ -4,7 +4,9 @@
 set -e
 
 APP_NAME="Pomodoro"
-BUILD_DIR="$(cd "$(dirname "$0")" && pwd)/build"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BUILD_DIR="$SCRIPT_DIR/build"
+cd "$SCRIPT_DIR"
 APP_BUNDLE="$BUILD_DIR/$APP_NAME.app"
 
 echo "Building $APP_NAME..."

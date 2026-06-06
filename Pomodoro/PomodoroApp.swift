@@ -9,9 +9,9 @@ struct PomodoroApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .frame(minWidth: 440, minHeight: 520)
+                .frame(minWidth: 400, minHeight: 520)
         }
         .windowResizability(.contentSize)
-        .defaultSize(width: 440, height: 560)
+        .defaultSize(width: 420, height: 540)
     }
 }
